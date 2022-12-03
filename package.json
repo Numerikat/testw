@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true yarn build && serve .next -n",
-    "build": "yarn lingui && next build",
+    "build": "next build",
     "circular": "madge --circular src --extensions ts,tsx,js,jsx",
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "e2e": "concurrently -k -s first -n \"app,e2e\" \"yarn dev\" \"yarn e2e:safe\"",
@@ -59,8 +59,6 @@
     "@builder.io/partytown": "^0.5.2",
     "@chainsafe/dappeteer": "2.4.1",
     "@clover-network/clover-connector": "^1.0.0",
-    "@commitlint/cli": "^16.2.0",
-    "@commitlint/config-conventional": "^16.2.0",
     "@davatar/react": "^1.9.0",
     "@ethereumjs/common": "^2.4.0",
     "@ethereumjs/tx": "^3.3.0",
@@ -156,8 +154,6 @@
     "d3-array": "^3.0.2",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.1.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.1.5",
     "eth-permit": "^0.2.1",
     "ethers": "^5.1.4",
     "fast-json-stable-stringify": "^2.1.0",
@@ -252,5 +248,10 @@
     "budget": 3584000,
     "budgetPercentIncreaseRed": 40,
     "showDetails": true
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "react-countdown": "^2.3.5",
+    "react-spinners": "^0.13.6"
   }
 }
